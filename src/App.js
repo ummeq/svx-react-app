@@ -1,25 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+import react, {useState, useEffect, useReducer} from 'react';
+import ReversedString from './Components/ReversedString';
+
 
 function App() {
+  const [resultString, setresultString] = useState();
+  const getReverseData = (data) => {
+    setresultString(data)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h4>Reverse Given String</h4>
+      <div className="given-string">
+      <ReversedString className="App-intro" sendReverseData={getReverseData}/>
+      </div>
+      {resultString ? <h1>Reversed String :  {resultString}</h1> : ''}
     </div>
-  );
+  )
 }
 
 export default App;

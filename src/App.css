@@ -13,16 +13,20 @@
   }
 }
 
+
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  height: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  cursor: pointer;
 }
+
 
 .App-link {
   color: #61dafb;
@@ -36,3 +40,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*New css for reversed string*/
+
+.given-string {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.App-header {
+  margin: 0
+}
+
+.button-position {
+  margin-left:10px !important;
+}
+
+
