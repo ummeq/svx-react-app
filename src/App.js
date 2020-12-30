@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import react, {useState, useEffect, useReducer} from 'react';
+import react, {useState} from 'react';
 import ReversedString from './Components/ReversedString';
 
 
 function App() {
   const [resultString, setresultString] = useState();
+  
+  //Function to get Reverse string
   const getReverseData = (data) => {
     setresultString(data)
   }

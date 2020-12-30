@@ -7,13 +7,15 @@ const ReversedString = (props) => {
 
   let resultString;
 
+  //Function to check given string belongs to character between a-zA-Z
   const isLetter = (char) => {
     return (char >= "A" && char <= "Z") || (char >= "a" && char <= "z");
   };
 
+  //Function to reverse the given string
   const callReverseString = (e) => {
     e.preventDefault();
-    let str = stringValue.split("");
+    const str = stringValue.split("");
     let i = 0;
     let j = str.length - 1;
     while (i < j) {
